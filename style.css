@@ -171,6 +171,13 @@ nav {
     border: 1px solid rgba(148, 163, 184, 0.24);
     transition: transform 0.25s ease, border-color 0.25s ease;
 }
+.project-link-row { margin-top: 0.6rem; }
+.project-link {
+    color: var(--accent-color);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+}
 .skill-card:hover, .project-card:hover { transform: translateY(-6px); border-color: rgba(37, 99, 235, 0.16); }
 
 .skill-header {
@@ -185,6 +192,12 @@ nav {
     fill: var(--accent-color);
 }
 
+.btn btn-outline {
+    border: 1px solid var(--accent-color);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    color: var(--accent-color);
+}
 /* Tags */
 .tags { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 1rem; }
 .tags span {
@@ -196,12 +209,19 @@ nav {
     padding: 0.35rem 0.65rem;
     border-radius: 999px;
     font-size: 0.86rem;
+    line-height: 1;
     font-family: 'Inter', sans-serif;
     border: 1px solid rgba(148, 163, 184, 0.18);
+    white-space: nowrap;
 }
+.tags span img,
 .tags span svg {
     width: 16px;
     height: 16px;
+    flex: 0 0 16px;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /* Footer */
