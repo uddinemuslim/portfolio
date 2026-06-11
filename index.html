@@ -3,78 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal portfolio site showcasing projects, skills, and contact details.">
-    <title>Portfolio | Your Name</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Muslim Uddin | ML Developer</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="hero">
-        <nav class="nav container">
-            <a class="logo" href="#top">Your Name</a>
-            <a class="nav-link" href="#projects">Projects</a>
-            <a class="nav-link" href="#skills">Skills</a>
-            <a class="nav-link" href="#contact">Contact</a>
-        </nav>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">M. Uddin</div>
+            <ul class="nav-links">
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="mailto:uddinemusim@gmail.com" class="nav-cta" target="_blank">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <section class="hero-content container" id="top">
-            <div>
-                <p class="eyebrow">Frontend Developer & Designer</p>
-                <h1>Building clean, modern web experiences.</h1>
-                <p class="lede">I create responsive websites, polished interfaces, and practical digital solutions with a focus on usability and speed.</p>
-                <a class="button" href="#contact">Let's connect</a>
+    <header id="hero" class="fade-in">
+        <div class="hero-content">
+            <p class="greeting">Hi, I'm</p>
+            <h1>Muslim Uddin.</h1>
+            <h2>Project Technician & AI/ML Analyst at IIT Guwahati.</h2>
+            <p class="tagline">Building intelligent computer vision systems and scalable full-stack applications.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=uddinemusim@gmail.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Contact Me</a>
             </div>
-            <aside class="card highlight-card">
-                <h2>Current focus</h2>
-                <ul>
-                    <li>Responsive web design</li>
-                    <li>UI implementation</li>
-                    <li>Accessible, fast-loading pages</li>
-                </ul>
-            </aside>
-        </section>
+        </div>
     </header>
 
-    <main class="container content-stack">
-        <section id="projects" class="section">
-            <h2>Featured Projects</h2>
-            <div class="grid cards">
-                <article class="card">
-                    <h3>Portfolio Site</h3>
-                    <p>A clean one-page portfolio built with HTML and CSS to present work and contact details clearly.</p>
-                </article>
-                <article class="card">
-                    <h3>Landing Page</h3>
-                    <p>A conversion-focused page with strong hierarchy, call-to-action buttons, and responsive layouts.</p>
-                </article>
-                <article class="card">
-                    <h3>Web App UI</h3>
-                    <p>Interface design work focused on readability, consistency, and delightful user interactions.</p>
-                </article>
+    <section id="experience" class="section fade-in">
+        <h3 class="section-title">My IIT Journey</h3>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <h4>Project Technician</h4>
+                <p class="timeline-date">Current | IIT Guwahati</p>
+                <p>Driving implementation and technical execution for advanced machine learning initiatives.</p>
             </div>
-        </section>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <h4>Machine Learning Research Intern</h4>
+                <p class="timeline-date">2025 - 2026 | IIT Guwahati</p>
+                <p>Researched and developed deep learning models, focusing on spatial filtering algorithms and computer vision architectures.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <h4>AI/ML Innovative Analyst</h4>
+                <p class="timeline-date">Early 2026 | IIT Guwahati</p>
+                <p>Completed specialized certification, culminating in complex, real-world AI deployment projects.</p>
+            </div>
+        </div>
+    </section>
 
-        <section id="skills" class="section">
-            <h2>Skills</h2>
-            <div class="chip-group">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Responsive Design</span>
-                <span>Accessibility</span>
-                <span>Git</span>
+    <section id="skills" class="section fade-in">
+        <h3 class="section-title">Tech Stack</h3>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="skill-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M12 2a1 1 0 0 1 1 1v1.09a5 5 0 0 1 1.81 9.67 5.002 5.002 0 0 1-3.62 0A5 5 0 0 1 11 4.09V3a1 1 0 0 1 1-1Zm-3.5 9.1a3 3 0 0 0 1.5 2.6V15a1 1 0 1 0 2 0v-1.3a3 3 0 0 0 1.5-2.6 3 3 0 0 0-3-3 3 3 0 0 0-3 3Zm5.7 6.7a1 1 0 0 1 .6 1.3 7 7 0 0 1-13.24 0 1 1 0 0 1 .6-1.3A5 5 0 0 0 6.5 18a5 5 0 0 0 5.7 0Z"/></svg>
+                    </span>
+                    <h4>Deep Learning & AI</h4>
+                </div>
+                <div class="tags">
+                    <span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none"><path d="M6 2.75C4.48 2.75 3.25 3.98 3.25 5.5v2.75c0 1.52 1.23 2.75 2.75 2.75H11c.69 0 1.25.56 1.25 1.25V13c0 .69-.56 1.25-1.25 1.25H8.75A1.75 1.75 0 0 0 7 15.75v1.75A2.75 2.75 0 0 0 9.75 20.25h3.5c1.52 0 2.75-1.23 2.75-2.75v-2.75c0-1.52-1.23-2.75-2.75-2.75H12.5c-.69 0-1.25-.56-1.25-1.25V9.5c0-.69.56-1.25 1.25-1.25H17c1.52 0 2.75-1.23 2.75-2.75V5.5C19.75 3.98 18.52 2.75 17 2.75H6Z" fill="#306998"/><circle cx="9" cy="5.5" r="1" fill="#FFD43B"/><circle cx="15" cy="18.5" r="1" fill="#306998"/></svg>Python</span>
+                    <span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none"><path d="M13.5 3.25L9.25 5.8v5.1c0 1.1.9 2 2 2h.4c1.53 0 2.75-1.22 2.75-2.75V8.1l3.4-.8L21 6.25l-4.6-2H13.5Z" fill="#F9682C"/><path d="M8.75 19.3c0 1.1.9 2 2 2h3.5c1.1 0 2-.9 2-2v-5.45c0-1.1-.9-2-2-2H9.75c-1.1 0-2 .9-2 2v3.45Z" fill="#F9682C"/></svg>PyTorch</span>
+                    <span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none"><circle cx="12" cy="12" r="10" fill="#3f8e3b"/><path d="M7 12.5h10M12 7v10M9 9l6 6" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>Scikit-learn</span>
+                </div>
             </div>
-        </section>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="skill-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M12 3C7 3 3 4.79 3 7v10c0 2.21 4 4 9 4s9-1.79 9-4V7c0-2.21-4-4-9-4Zm0 2c4.27 0 7 .97 7 2s-2.73 2-7 2-7-.97-7-2 2.73-2 7-2Zm0 14c-4.27 0-7-.97-7-2V13c2.27 1.3 5.6 2 7 2s4.73-.7 7-2v4c0 1.03-2.73 2-7 2Zm0-5c-4.27 0-7-.97-7-2V9c2.27 1.3 5.6 2 7 2s4.73-.7 7-2v1c0 1.03-2.73 2-7 2Z"/></svg>
+                    </span>
+                    <h4>Data Science</h4>
+                </div>
+                <div class="tags">
+                    <span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none"><rect x="3" y="3" width="18" height="18" rx="4" fill="#F7CA18"/><text x="12" y="16" text-anchor="middle" font-size="8.5" font-weight="700" fill="#000">np</text></svg>NumPy</span>
+                    <span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none"><circle cx="12" cy="12" r="10" fill="#2CA02C"/><path d="M8 8h8v8H8V8Z" fill="#fff"/><path d="M9.5 10.5h5" stroke="#2CA02C" stroke-width="1.5" stroke-linecap="round"/></svg>Pandas</span>
+                    <span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none"><path d="M4 19h16v2H4v-2Z" fill="#4C72B0"/><path d="M5 18l6-6 6 6" stroke="#FF7F0E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 14h14" stroke="#9467BD" stroke-width="2" stroke-linecap="round"/></svg>Matplotlib</span>
+                    <span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none"><ellipse cx="12" cy="7" rx="7" ry="2.5" fill="#007ACC"/><path d="M5 7v6c0 2.2 3.1 4 7 4s7-1.8 7-4V7" fill="#1F85E5"/><path d="M5 10h14" stroke="#fff" stroke-width="1.2"/></svg>SQL</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="skill-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 2v2h16V6H4Zm0 4v8h16v-8H4Zm2 2h12v2H6v-2Z"/></svg>
+                    </span>
+                    <h4>Web Development</h4>
+                </div>
+                <div class="tags">
+                    <span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none"><rect x="2" y="2" width="20" height="20" rx="4" fill="#F7DF1E"/><path d="M9.4 7.9h2.9c1.3 0 2.4.5 2.4 1.9 0 1.1-.7 1.5-1.6 1.8l1.7 2.4h-1.8l-1.6-2.3h-.9v2.3H9.4V7.9Zm4.8 5.2c.3.7.7 1.3 1.6 1.3.8 0 1.3-.4 1.3-1.1 0-.8-.6-1-1.3-1.3-.6-.2-1.8-.4-1.8-1.5 0-1.2 1-1.8 2.1-1.8.9 0 1.6.2 2.1.7l-.8 1.5c-.3-.2-.6-.4-1.3-.4-.6 0-1 .3-1 1 0 .7.4.9 1.5 1.3.8.3 1.3.5 1.3 1.3 0 1.1-.9 1.7-2.2 1.7-1.2 0-2-.5-2.4-1.2l.8-1.5Z" fill="#000"/></svg>JavaScript</span>
+                    <span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none"><path d="M4 3l8-2 8 2v6.5c0 6-4 6.5-8 6.5s-8-.5-8-6.5V3Z" fill="#E34F26"/><path d="M12 5.2v3.2c2.9 0 4.5-.9 4.5-2.6V5.2H12Z" fill="#F06529"/><path d="M6.5 15.5l.5-1.5h8.5l.5 1.5L12 17.7l-5.5-2.2Z" fill="#EBEBEB"/><path d="M12 13.5l4.3-1.2.3-1.1H7.4l.3 1.1 4.3 1.2Z" fill="#fff"/></svg>HTML5</span>
+                    <span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none"><path d="M4 3l8-2 8 2v6.5c0 6-4 6.5-8 6.5s-8-.5-8-6.5V3Z" fill="#1572B6"/><path d="M12 5.2v3.2c2.9 0 4.5-.9 4.5-2.6V5.2H12Z" fill="#33A9DC"/><path d="M6.5 15.5l.5-1.5h8.5l.5 1.5L12 17.7l-5.5-2.2Z" fill="#EBEBEB"/><path d="M12 13.5l4.3-1.2.3-1.1H7.4l.3 1.1 4.3 1.2Z" fill="#fff"/></svg>CSS3</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="skill-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M12 1a2 2 0 0 1 2 2v1.06a7.002 7.002 0 0 1 3.57 1.95l.75-.43a2 2 0 1 1 2 3.46l-.75.43A7.076 7.076 0 0 1 21 12c0 .33-.02.66-.06.98l.75.43a2 2 0 1 1-2 3.46l-.75-.43A7.002 7.002 0 0 1 14 20.94V22a2 2 0 1 1-4 0v-1.06a7.002 7.002 0 0 1-3.57-1.95l-.75.43a2 2 0 1 1-2-3.46l.75-.43A7.076 7.076 0 0 1 3 12c0-.33.02-.66.06-.98l-.75-.43a2 2 0 1 1 2-3.46l.75.43A7.002 7.002 0 0 1 10 4.06V3a2 2 0 0 1 2-2Zm0 7a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg>
+                    </span>
+                    <h4>Workflow & Tools</h4>
+                </div>
+                <div class="tags">
+                    <span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none"><rect x="2" y="2" width="8" height="8" rx="2" fill="#4285F4"/><rect x="14" y="2" width="8" height="8" rx="2" fill="#EA4335"/><rect x="2" y="14" width="8" height="8" rx="2" fill="#FBBC05"/><rect x="14" y="14" width="8" height="8" rx="2" fill="#34A853"/></svg>Google Workspace</span>
+                    <span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none"><circle cx="12" cy="12" r="10" fill="#F05032"/><path d="M8.5 8.5h2.5v7L16 12.5v-2l-5.5 3.5v-4Z" fill="#fff"/></svg>Git</span>
+                    <span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none"><path d="M11.5 2C8.02 2 5.25 4.77 5.25 8.25c0 3.7 3.4 6.55 6.25 6.55s6.25-2.85 6.25-6.55C17.75 4.77 14.98 2 11.5 2Zm0 14.5c-3.68 0-6.75-2.38-6.75-6.25 0-3.22 2.6-5.75 6.75-5.75s6.75 2.53 6.75 5.75c0 3.87-3.07 6.25-6.75 6.25Z" fill="#000"/><circle cx="11.5" cy="15.5" r="1.75" fill="#000"/></svg>Linux/WSL</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <div class="card contact-card">
-                <p>Ready to build something meaningful together?</p>
-                <a class="button secondary" href="mailto:hello@example.com">hello@example.com</a>
+    <section id="projects" class="section fade-in">
+        <h3 class="section-title">Featured Projects</h3>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-content">
+                    <h4>Real-Time PPE Compliance System</h4>
+                    <p>A computer vision system utilizing center-point logic for spatial filtering to ensure workplace safety compliance.</p>
+                    <div class="tags">
+                        <span>YOLOv8</span> <span>PyTorch</span> <span>OpenCV</span>
+                    </div>
+                </div>
             </div>
-        </section>
-    </main>
+            <div class="project-card">
+                <div class="project-content">
+                    <h4>A2Z Tuition Centre ERP</h4>
+                    <p>A full-stack enterprise resource planning application designed with a modern UI/UX and robust server-side authentication.</p>
+                    <div class="tags">
+                        <span>React</span> <span>Node.js</span> <span>Express</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="section fade-in">
+        <h2>Let's build something.</h2>
+        <p>Currently open for new opportunities and collaborations.</p>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=uddinemusim@gmail.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Say Hello</a>
+        <div class="social-links">
+            <a href="https://github.com/uddinemuslim" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.754-1.333-1.754-1.09-.745.083-.73.083-.73 1.205.084 1.84 1.238 1.84 1.238 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.304.76-1.605-2.665-.305-5.467-1.334-5.467-5.93 0-1.31.468-2.38 1.236-3.22-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 0 1 3.003-.404c1.018.004 2.043.138 3.003.404 2.29-1.552 3.297-1.23 3.297-1.23.655 1.653.244 2.873.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.623-5.48 5.92.43.372.823 1.102.823 2.222 0 1.606-.014 2.9-.014 3.293 0 .32.216.694.825.577C20.565 21.796 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                </svg>
+                GitHub
+            </a>
+            <a href="https://linkedin.com/in/muslim-uddin" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M20.452 20.452h-3.554v-5.569c0-1.328-.026-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.938v5.668H9.357V9h3.414v1.561h.049c.476-.9 1.637-1.852 3.369-1.852 3.602 0 4.267 2.372 4.267 5.456v6.287zM5.337 7.433c-1.144 0-2.071-.928-2.071-2.071 0-1.145.927-2.072 2.071-2.072 1.145 0 2.071.927 2.071 2.072 0 1.143-.926 2.071-2.071 2.071zm1.777 13.019H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 .771 0 1.725v20.549C0 23.229.792 24 1.771 24h20.451C23.206 24 24 23.229 24 22.274V1.725C24 .771 23.206 0 22.225 0z"/>
+                </svg>
+                LinkedIn
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
