@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M. Uddin - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f5f8ff;
+        }
+        .code-font {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        /* Typing cursor effect simulation */
+        .cursor-blink {
+            border-right: 3px solid #2563eb;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+        /* Custom curved background blob behind profile */
+        .blob-bg {
+            background: linear-gradient(135deg, #cbdcff 0%, #e2ecff 100%);
+            border-radius: 43% 57% 41% 59% / 57% 45% 55% 43%;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between overflow-x-hidden text-slate-800">
+
+    <header class="w-full max-w-7xl mx-auto px-6 py-6 flex justify-between items-center z-50">
+        <div class="text-xl font-bold text-blue-700 tracking-wide">M. Uddin</div>
+        <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600">
+            <a href="#" class="hover:text-blue-600 transition">About</a>
+            <a href="#" class="hover:text-blue-600 transition">Experience</a>
+            <a href="#" class="hover:text-blue-600 transition">Projects</a>
+            <a href="#" class="hover:text-blue-600 transition">Skills</a>
+            <a href="#" class="hover:text-blue-600 transition">Resume</a>
+            <a href="#" class="ml-4 px-6 py-2 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition font-semibold">Contact</a>
+        </nav>
+    </header>
+
+    <main class="w-full max-w-7xl mx-auto px-6 flex-grow grid grid-cols-1 lg:grid-cols-12 gap-8 items-center pt-4 pb-12 relative">
+        
+        <div class="lg:col-span-6 flex flex-col gap-6 z-10">
+            <div class="text-blue-600 font-semibold code-font text-base md:text-lg tracking-wide flex items-center gap-2">
+                Hi, I'm Muslim Uddin <span class="animate-bounce">👋</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 leading-tight">
+                AI & Full-Stack<br>
+                <span class="cursor-blink pr-1">Developer</span>
+            </h1>
+            
+            <p class="text-lg text-slate-500 max-w-xl leading-relaxed">
+                Building AI-powered applications, computer vision systems, and modern web experiences.
+            </p>
+            
+            <div class="flex flex-wrap gap-3 mt-2">
+                <span class="flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-100/50">
+                    <i class="fa-solid fa-graduation-cap text-blue-500"></i> IIT Guwahati
+                </span>
+                <span class="flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-100/50">
+                    <i class="fa-solid fa-robot text-blue-500"></i> AI / ML Enthusiast
+                </span>
+                <span class="flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-100/50">
+                    <i class="fa-solid fa-globe text-blue-500"></i> Full-Stack Developer
+                </span>
+            </div>
+            
+            <div class="flex flex-wrap items-center gap-4 mt-4">
+                <button class="px-6 py-3.5 bg-blue-600 text-white font-semibold rounded-xl shadow-lg shadow-blue-500/30 hover:bg-blue-700 hover:shadow-xl transition flex items-center gap-2">
+                    <i class="fa-solid fa-briefcase"></i> View Projects
+                </button>
+                <button class="px-6 py-3.5 border border-blue-600 text-blue-600 font-semibold rounded-xl hover:bg-blue-50 transition flex items-center gap-2">
+                    <i class="fa-solid fa-download"></i> Download Resume
+                </button>
+                <button class="px-6 py-3.5 border border-blue-600 text-blue-600 font-semibold rounded-xl hover:bg-blue-50 transition flex items-center gap-2">
+                    <i class="fa-solid fa-envelope"></i> Contact Me
+                </button>
+            </div>
+
+            <div class="grid grid-cols-4 gap-2 bg-white/60 backdrop-blur-md p-4 rounded-2xl border border-white mt-8 shadow-sm max-w-xl">
+                <div class="flex items-center gap-3 border-r border-slate-100 last:border-0 px-2">
+                    <div class="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 text-sm"><i class="fa-solid fa-code"></i></div>
+                    <div>
+                        <div class="text-lg font-bold text-slate-900 leading-none">10+</div>
+                        <div class="text-[11px] text-slate-400 font-medium">Projects</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 border-r border-slate-100 last:border-0 px-2">
+                    <div class="w-10 h-10 rounded-xl bg-purple-50 flex items-center justify-center text-purple-600 text-sm"><i class="fa-solid fa-suitcase"></i></div>
+                    <div>
+                        <div class="text-lg font-bold text-slate-900 leading-none">6+</div>
+                        <div class="text-[11px] text-slate-400 font-medium">Months Exp</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 border-r border-slate-100 last:border-0 px-2">
+                    <div class="w-10 h-10 rounded-xl bg-pink-50 flex items-center justify-center text-pink-600 text-sm"><i class="fa-solid fa-heart"></i></div>
+                    <div>
+                        <div class="text-lg font-bold text-slate-900 leading-none">5+</div>
+                        <div class="text-[11px] text-slate-400 font-medium">Techs</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 last:border-0 px-2">
+                    <div class="w-10 h-10 rounded-xl bg-amber-50 flex items-center justify-center text-amber-500 text-sm"><i class="fa-solid fa-star"></i></div>
+                    <div>
+                        <div class="text-lg font-bold text-slate-900 leading-none">100%</div>
+                        <div class="text-[11px] text-slate-400 font-medium">Dedication</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:col-span-6 relative flex justify-center items-center min-h-[500px] lg:min-h-[600px]">
+            
+            <div class="absolute w-[85%] h-[85%] blob-bg bottom-4 right-4 z-0"></div>
+            
+            <div class="absolute top-12 right-0 w-32 h-48 opacity-20 pointer-events-none bg-[radial-gradient(#2563eb_1.5px,transparent_1.5px)] [background-size:12px_12px]"></div>
+
+            <div class="absolute left-0 top-16 bg-[#131b2e] text-slate-300 p-5 rounded-2xl shadow-xl w-64 code-font text-xs border border-slate-800 z-30 transform -translate-x-4 lg:-translate-x-8">
+                <div class="text-blue-400 mb-2 flex items-center gap-1"><i class="fa-solid fa-code text-[10px]"></i></div>
+                <div><span class="text-pink-500">const</span> <span class="text-blue-400">developer</span> = {</div>
+                <div class="pl-4"><span class="text-slate-400">skills</span>: [<span class="text-green-400">"AI/ML"</span>,</div>
+                <div class="pl-4"><span class="text-green-400">"Full-Stack"</span>, <span class="text-green-400">"DSA"</span>],</div>
+                <div class="pl-4"><span class="text-slate-400">passion</span>: <span class="text-green-400">"Building</span></div>
+                <div class="pl-4 text-green-400">impactful solutions"</div>
+                <div>};</div>
+            </div>
+
+            <div class="absolute bottom-0 w-full h-[95%] flex items-end justify-center z-20 overflow-visible">
+                <img src="https://via.placeholder.com/500x600/000000/000000?text=+" 
+                     alt="Muslim Uddin Profile" 
+                     class="max-h-full object-contain pointer-events-none filter drop-shadow-2xl mix-blend-multiply opacity-20" 
+                     style="min-height: 480px; width: auto; content: url('your-image-file.png');">
+                     
+                     <div class="absolute inset-x-12 top-24 bottom-0 border-2 border-dashed border-blue-300 rounded-t-3xl flex items-center justify-center -z-10 bg-blue-50/10">
+                         <span class="text-sm font-medium text-blue-400 tracking-wider">YOUR IMAGE HERE (Cutout PNG)</span>
+                     </div>
+            </div>
+
+            <div class="absolute right-0 flex flex-col gap-4 z-30 transform translate-x-4">
+                <div class="w-12 h-12 rounded-full bg-white shadow-md border border-slate-100 flex items-center justify-center text-xl hover:scale-110 transition cursor-pointer">
+                    <i class="fa-brands fa-python text-amber-400"></i>
+                </div>
+                <div class="w-12 h-12 rounded-full bg-white shadow-md border border-slate-100 flex items-center justify-center text-xl hover:scale-110 transition cursor-pointer">
+                    <i class="fa-brands fa-react text-sky-400"></i>
+                </div>
+                <div class="w-12 h-12 rounded-full bg-white shadow-md border border-slate-100 flex items-center justify-center text-xl hover:scale-110 transition cursor-pointer">
+                    <i class="fa-brands fa-node-js text-green-600"></i>
+                </div>
+                <div class="w-12 h-12 rounded-full bg-white shadow-md border border-slate-100 flex items-center justify-center text-xl hover:scale-110 transition cursor-pointer">
+                    <i class="fa-solid fa-leaf text-emerald-500"></i>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="w-full text-center pb-6 pt-2 text-slate-400 flex flex-col items-center gap-1 text-xs font-semibold tracking-wider">
+        <div class="w-5 h-8 border-2 border-slate-300 rounded-full flex justify-center pt-1.5 mb-1">
+            <div class="w-1 h-1.5 bg-slate-400 rounded-full animate-bounce"></div>
+        </div>
+        Scroll to explore
+        <i class="fa-solid fa-chevron-down mt-1 text-[10px] animate-pulse"></i>
+    </footer>
+
+</body>
+</html>

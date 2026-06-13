@@ -1,3 +1,15 @@
+// Download Resume Function
+function downloadResume() {
+    // You can update this with your actual resume file path
+    const resumeUrl = 'resume.pdf'; // Replace with your resume file path
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = 'Muslim-Uddin-Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
