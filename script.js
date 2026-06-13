@@ -48,3 +48,15 @@ const appearOnScroll = new IntersectionObserver(function(entries, observer) {
 faders.forEach(fader => {
     appearOnScroll.observe(fader);
 });
+
+// Hide Scroll Indicator on Scroll
+const scrollIndicator = document.querySelector('.scroll-indicator');
+if (scrollIndicator) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 20) {
+            scrollIndicator.classList.add('scrolled');
+        } else {
+            scrollIndicator.classList.remove('scrolled');
+        }
+    });
+}
