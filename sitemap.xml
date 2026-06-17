@@ -1,27 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Portfolio Homepage -->
   <url>
     <loc>https://moslem.in/</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.00</priority>
   </url>
+
+  <!-- Tuition Management Subdomain -->
   <url>
-    <loc>https://moslem.in/#hero</loc>
+    <loc>https://a2ztuition.moslem.in/</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
-  <url>
-    <loc>https://moslem.in/#experience</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://moslem.in/#skills</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://moslem.in/#projects</loc>
-    <priority>0.80</priority>
-  </url>
+
+  <!-- Static Resume Asset -->
   <url>
     <loc>https://moslem.in/resume.pdf</loc>
-    <priority>0.64</priority>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
   </url>
 </urlset>
