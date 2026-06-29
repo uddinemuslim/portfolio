@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+/* Color Palette & Variables */
+:root {
+    --bg-color: #ffffff;
+    --surface-color: rgba(255, 255, 255, 0.7);
+    --accent-color: #2563eb;
+    --accent-light: #eff6ff;
+    --accent-hover: #1d4ed8;
+    --text-main: #0b1329; /* Deep navy text */
+    --text-muted: #64748b; /* Softer gray text */
+    --border-color: rgba(15, 23, 42, 0.06);
+    --font-family: 'Inter', sans-serif;
+    
+    /* Box Shadows */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+    --shadow-md: 0 10px 30px -10px rgba(15, 23, 42, 0.08), 0 1px 3px rgba(15, 23, 42, 0.03);
+    --shadow-lg: 0 20px 40px -15px rgba(15, 23, 42, 0.12), 0 1px 10px rgba(15, 23, 42, 0.04);
+    --shadow-btn: 0 4px 14px 0 rgba(37, 99, 235, 0.35);
+}
+
+body {
+    background: 
+        radial-gradient(circle at top right, rgba(37, 99, 235, 0.05), transparent 45%),
+        radial-gradient(circle at top left, rgba(99, 102, 241, 0.03), transparent 35%),
+        #ffffff;
+    color: var(--text-main);
+    font-family: var(--font-family);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Pseudo-elements and complex animations */
+
+@keyframes ripple {
+    0% { transform: scale(1); opacity: 0.8; }
+    100% { transform: scale(3.5); opacity: 0; }
+}
+
+@keyframes wave-hand {
+    0%, 100% { transform: rotate(0deg); }
+    20%, 60% { transform: rotate(-12deg); }
+    40%, 80% { transform: rotate(14deg); }
+}
+
+@keyframes curve-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+@keyframes blob-float {
+    0% { transform: translate(0, 0) scale(1) rotate(0deg); border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+    50% { transform: translate(20px, -30px) scale(1.1) rotate(90deg); border-radius: 40% 60% 50% 50% / 50% 60% 40% 50%; }
+    100% { transform: translate(-10px, 10px) scale(0.95) rotate(180deg); border-radius: 50% 50% 60% 40% / 40% 50% 50% 60%; }
+}
+
+@keyframes profile-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+@keyframes code-float {
+    0%, 100% { transform: translateY(-50%); }
+    50% { transform: translateY(calc(-50% - 8px)); }
+}
+
+@keyframes icon-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+@keyframes scroll-wheel-slide {
+    0% { transform: translateY(0); opacity: 0; }
+    20% { opacity: 1; }
+    80% { transform: translateY(10px); opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes arrow-bounce-subtle {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(4px); }
+}
+
+/* Profile Image Wrapper Background Card */
+.profile-image-wrapper::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 85%; /* Card is 85% of wrapper height, leaving top 15% for cutout */
+    background: radial-gradient(circle at 50% 30%, #ffffff 0%, #eaeef6 100%);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: var(--shadow-lg);
+    z-index: 1;
+}
+
+/* Percentage placements for floating tech stack icons */
+.tech-icon-python { top: 24%; left: 11%; animation-delay: 0s; }
+.tech-icon-numpy { top: 6%; left: 24%; animation-delay: 0.6s; }
+.tech-icon-pytorch { top: -4%; left: 42%; animation-delay: 1.2s; }
+.tech-icon-scikit { top: -7%; left: 64%; animation-delay: 1.8s; }
+.tech-icon-html { top: 0%; left: 86%; animation-delay: 2.4s; }
+.tech-icon-css { top: 17%; left: 102%; animation-delay: 3.0s; }
+.tech-icon-js { top: 39%; left: 113%; animation-delay: 3.6s; }
+.tech-icon-sql { top: 64%; left: 111%; animation-delay: 4.2s; }
+.tech-icon-react { top: 87%; left: 94%; animation-delay: 4.8s; }
+
+/* Scroll animations */
+.fade-in { 
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); 
+}
+.fade-in.appear { 
+    opacity: 1; 
+    transform: translateY(0); 
+}
